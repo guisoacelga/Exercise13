@@ -15,9 +15,23 @@ public class RecipeApp {
         TallarinesConSalsa.ingredientsNames = new String[]{"milk", "tomato sauce", "meat", "oregano", "garlic"};
         System.out.println("Es libre de lactosa? " + TallarinesConSalsa.lactoseFree());
 
+        //imprime el arreglo 2d
         for (int i = 0; i < TallarinesConSalsa.ingredientsQuantityPrice.length ; i++) {
             System.out.println(Arrays.toString(TallarinesConSalsa.ingredientsQuantityPrice[i]));
         }
+
+        System.out.println("Cuál es la suma del costo de los ingredientes? " + TallarinesConSalsa.costs());
+        System.out.println("Cuál es el costo de los ingredientes por persona? " + TallarinesConSalsa.costsPerPerson());
+        System.out.println("Y cuánto costaría en total si fuesen 4 personas? " );
+        TallarinesConSalsa.changePersons(4);
+        for (int i = 0; i < TallarinesConSalsa.ingredientsQuantityPrice.length ; i++) {
+            System.out.println(Arrays.toString(TallarinesConSalsa.ingredientsQuantityPrice[i]));
+        }
+        System.out.println("Cuál es la suma del costo de los ingredientes? " + TallarinesConSalsa.costs());
+
+
+
+
 
     }
 
