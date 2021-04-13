@@ -12,7 +12,7 @@ public class RecipeApp {
         System.out.println("Es alergico a la pasta? " + TallarinesConSalsa.allergic("pasta"));
 
         System.out.println("Es libre de lactosa? " + TallarinesConSalsa.lactoseFree());
-        TallarinesConSalsa.ingredientsNames = new String[]{"milk", "tomato sauce", "meat", "oregano", "garlic"};
+        TallarinesConSalsa.ingredientsNames = new String[]{"pasta", "tomato sauce", "meat", "oregano", "cheese"};
         System.out.println("Es libre de lactosa? " + TallarinesConSalsa.lactoseFree());
 
         //imprime el arreglo 2d
